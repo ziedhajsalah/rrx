@@ -1,20 +1,12 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
+import { Navbar } from './modules'
 
-const styles = {
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh'
-  }
-}
 
-const App = () => (
-  <div style={styles.root}>
-    <h1>Hello world!</h1>
-    <img src={logo} className='App-logo' alt='logo' />
+const App = ({children}) => (
+  <div>
+    <Navbar />
+    <div>{children}</div>
   </div>
 )
 
