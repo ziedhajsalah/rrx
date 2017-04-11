@@ -1,3 +1,4 @@
 import Navbar from './Navbar'
+import Page404 from './Page404'
 
-export { Navbar }
+export { Navbar, Page404 }
